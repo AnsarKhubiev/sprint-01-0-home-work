@@ -1,34 +1,24 @@
 import React from 'react';
 import './App.css';
+import {Card} from "./components/Card";
 import styled from "styled-components";
-import {StyledImage} from "./components/Image.styled";
+import {GlobalStyles} from "./styles/GlobalStyles";
+
 
 function App() {
-  return (
-    <div className="App">
-    <Box>
-        <Card>
-            <StyledImage>
-                <img src="images/img.png" alt="image"/>
-            </StyledImage>
-        </Card>
-    </Box>
-    </div>
-  );
+    return (
+        <StyledApp className="App">
+            <Card/>
+            <GlobalStyles/>
+        </StyledApp>
+    );
 }
 
 export default App;
 
-const Box = styled.div`
+const StyledApp = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-`
-
-const Card = styled.div`
-  width: 300px;
-  height: 350px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.10);
 `
