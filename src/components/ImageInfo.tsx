@@ -19,10 +19,8 @@ export const ImageInfo = () => {
 
 const StyledImageInfo = styled.div`
   display: flex;
-  justify-content: left;
-  flex-direction: row;
+  flex-flow: row wrap;
   margin: 20px;
-  flex-wrap: wrap;
 `
 
 const CardTitle = styled.h1`
